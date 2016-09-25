@@ -1,0 +1,169 @@
+/*general styling*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, .btn {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: #1bbc9b;
+  padding: 10px 30px;
+  /*padding: top right bottom left;*/
+  /*padding: 10px 20px 30px 40px;*/
+  border-radius: 3px;
+  display: inline-block;
+}
+
+section {
+  padding: 40px 0;
+}
+
+
+/*nav styling*/
+
+nav {
+  background: black;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+nav ul {
+  padding: 0;
+  float: right;
+  margin-top: 48px;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+/*header styling*/
+header{
+  background: black url(../images/header-bg.jpg) center no-repeat;
+  color: white;
+  text-align: center;
+  height: 600px;
+  padding-top: 150px;
+}
+
+header h2 {
+  margin-bottom: 30px;
+}
+
+/*Feature Styling*/
+.features{
+text-align: center;
+}
+
+.features article {
+  width: 24%;
+  display: inline-block;
+}
+
+.features article .btn {
+  color: #1bbc9b;
+  background: white;
+  border: 1px solid #1bbc9b;
+  /*border-width: 1px*/
+}
+
+/*section styling*/
+.mockup {
+background: black url(../images/mockup-bg.jpg) center no-repeat;
+background-attachment: fixed;
+color: white;
+text-align: center;
+/*height: 600px;*/
+padding-top: 10px;
+}
+
+.clients{
+  color: white;
+  background: #1bbc9b;
+  text-align: center;
+  /*height: 400px;*/
+}
+
+.clients ul li {
+  display: inline-block;;
+}
+
+.clients ul li img {
+  max-width: 150px;
+}
+
+.clients .btn{
+  color: white;
+  background: no;
+  border: 1px solid white;
+  font-size: 12px;
+  transition: all .2s ease;
+}
+
+.clients .btn:hover {
+  background: white;
+  color: #1bbc9b;
+}
+
+footer {
+  padding: 30px;
+  background: black;
+  text-align: center;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+footer ul li img {
+display: inline-block;
+max-width: 30px;
+transition: all .2s ease;
+}
+
+footer ul li img:hover {
+opacity: .5;
+}
+
+/*media Quries*/
+@media (max-width: 768px) {
+  nav {
+    text-align: center;
+    padding: 20px 0;
+  }
+  nav ul {
+    float: none;
+  }
+
+.features article {
+  width: 100%;
+  display: block;
+}
+
+.mockup img{
+  max-width: 100%;
+  height: auto;
+}
+}
